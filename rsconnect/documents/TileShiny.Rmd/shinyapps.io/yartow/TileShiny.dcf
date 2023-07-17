@@ -1,0 +1,13 @@
+name: TileShiny
+title: TileShiny
+username:
+account: yartow
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9467020
+bundleId: 7465672
+url: https://yartow.shinyapps.io/TileShiny/
+when: 1689599784.43391
+lastSyncTime: 1689599784.43392
+asMultiple: FALSE
+asStatic: FALSE

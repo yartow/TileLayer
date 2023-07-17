@@ -1,13 +1,17 @@
-#Laminaat.R
+# This is Laminaat.R
+# This function produces a CSV-file and plot of how laminate should be placed in
+# a room. 
+# TODO for next updates, what to do if room is not rectangular but parallelogram- or trapezoid-like shaped? 
+# What if there are corners? 
 
-#Inputs
+# Inputs
 # CONSTANTS
 
-#Measurements of room, including the 1cm margin on all sides
+# Measurements of room, including the 1cm margin on all sides
 ROOM.LENGTH <- 950
 ROOM.WIDTH <- 550
-#surface <- room.length * room.width
-#Beginning length in cms
+# surface <- room.length * room.width
+# Beginning length in cms
 START.LENGTH <- 50
 
 #Sawing precision in millimeters
@@ -20,7 +24,7 @@ BOARD.WIDTH <- 19.3
 #get the number of rows
 NUMBEROFROWS <- round(ROOM.WIDTH / BOARD.WIDTH) + 1
 
-#define the variables
+# initialize the variables
 i <- numeric(0)
 NumberOfBoards <- numeric(0)
 end.length <- numeric(0)
@@ -93,7 +97,7 @@ plot(0, board.width, type="h", col="black", lty=1,
 
 row <- 1
 board <- 2
-#Mark the four walls of the room
+# Mark the four walls of the room
 lines(c(0,ROOM.LENGTH), c(0, 0))
 lines(c(0,0), c(0, ROOM.WIDTH))
 lines(c(0, ROOM.LENGTH), c(ROOM.WIDTH, ROOM.WIDTH))
